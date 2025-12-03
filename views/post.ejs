@@ -1,4 +1,12 @@
-<h1><%= data.title %></h1>
-<article class="article">
+<div class="post-header">
+    <h1 class="post-title"><%= data.title %></h1>
+    <p class="post-date"><%= data.createdAt.toDateString() %></p>
+</div>
+
+<div class="post-divider"></div>
+
+<article class="post-content">
     <%= data.body %>
 </article>
+
+<a href="/" class="back-home">← Back to Home</a>

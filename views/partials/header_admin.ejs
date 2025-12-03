@@ -1,21 +1,13 @@
-<header class="header">
-    <a href="/" class="header__logo">Admin Panel</a>
-    <nav class="header__nav">
-        <ul>
-            <li>
-                <a href="/" class="">Home</a>
-            </li>
-            <li>
-                <a href="/about" class="">About</a>
-            </li>
-            <li>
-                <a href="/contact" class="">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="header__button">
-<a href="/logout">
-   Log out
-</a>
-    </div>
+<header class="admin-header">
+  <nav class="admin-nav">
+    <a href="/admin/dashboard" class="nav-link">Dashboard</a>
+    <a href="/admin/add-post" class="nav-link">Add Post</a>
+    <a href="/admin/logout" class="nav-link">Logout</a>
+
+    <!-- Search Bar -->
+    <form action="/admin/dashboard" method="GET" class="admin-search-form">
+      <input type="text" name="search" placeholder="Search posts..." value="<%= typeof search !== 'undefined' ? search : '' %>">
+      <button type="submit">Search</button>
+    </form>
+  </nav>
 </header>
