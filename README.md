@@ -35,7 +35,7 @@ Other Tools: dotenv, method-override, bcrypt
 
 ⚙️ How to Run Locally
 1️⃣ Clone the repository
-git clone https://github.com/umy-aiman/Blog-Project.git
+git clone https://github.com/UmyAiman/Blog-Project
 cd blog-project
 
 2️⃣ Install dependencies
