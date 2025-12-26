@@ -1,70 +1,131 @@
-📝 Blog Management System (Node + Express + MongoDB)
+Blog Management System (MERN Backend + EJS Frontend)
 
-A complete Blog Application built using Node.js, Express.js, MongoDB, and EJS.
-It includes a public blog website and a secure Admin Panel for managing posts.
-Admins can create, edit, delete, and search blog posts with a clean and simple UI.
+A full-stack Blog Management System built using Node.js, Express.js, MongoDB, and EJS.
+The application provides a public-facing blog platform along with a secure admin dashboard that allows administrators to manage blog content efficiently.
 
-✨ Features
-🌐 Public Blog
-View all posts
-Read single post pages
-Responsive layout
-Clean UI with EJS
+This project demonstrates backend development skills, authentication, role-based access control, and RESTful architecture.
 
-🛡️ Admin Panel
-Secure JWT-based login
-Dashboard for managing posts
-Add New Post
-Edit Existing Post
-Delete Post
-Live Search Functionality
+🚀 Key Features
+Public Blog
 
-Protected routes: only logged-in admins can access
-⚙️ Additional Features
-Custom EJS layouts
-Custom CSS styling
-Method override for updating and deleting
-Organized folder structure suitable for recruiters
+View all published blog posts
+
+Read individual blog posts
+
+Clean and responsive user interface
+
+Server-side rendering using EJS templates
+
+Admin Panel
+
+Secure JWT-based authentication
+
+Admin-only protected routes
+
+Create, edit, and delete blog posts
+
+Live search functionality for posts
+
+Centralized dashboard for content management
+
+🔐 Security & Authentication
+
+JWT authentication with HTTP-only cookies
+
+Password hashing using bcrypt
+
+Protected routes accessible only to authenticated admins
 
 🧰 Tech Stack
-Frontend: EJS, HTML, CSS
-Backend: Node.js, Express.js
-Database: MongoDB (Mongoose)
-Authentication: JWT + Cookies
-Other Tools: dotenv, method-override, bcrypt
 
-⚙️ How to Run Locally
-1️⃣ Clone the repository
+Frontend
+
+EJS
+
+HTML5
+
+CSS3
+
+Backend
+
+Node.js
+
+Express.js
+
+Database
+
+MongoDB (Mongoose ODM)
+
+Authentication & Tools
+
+JSON Web Tokens (JWT)
+
+bcrypt
+
+dotenv
+
+method-override
+
+📁 Project Structure
+
+The project follows a clean and organized folder structure to ensure scalability and maintainability:
+
+routes/
+
+controllers/
+
+models/
+
+views/
+
+public/
+
+middleware/
+
+⚙️ Installation & Setup
+1. Clone the Repository
 git clone https://github.com/UmyAiman/Blog-Project
 cd blog-project
 
-2️⃣ Install dependencies
+2. Install Dependencies
 npm install
 
-3️⃣ Create .env file
-MONGODB_URI=your_mongo_connection_string
+3. Environment Variables
+
+Create a .env file in the root directory and add:
+
+MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 PORT=3000
 
-4️⃣ Run the project
+4. Run the Application
 npm start
-Your app will run on:
-👉 http://localhost:3000
 
-🔒 Admin Workflow
-Admin logs in using email + password
-Token is stored for authentication
-Admin can now access:
+
+The application will run at:
+
+http://localhost:3000
+
+🔑 Admin Workflow
+
+Admin logs in using email and password
+
+JWT token is generated and stored securely
+
+Admin gains access to protected routes:
+
 /admin/dashboard
+
 /admin/add-post
+
 /admin/edit-post/:id
 
 Admin can:
-Add Post
-Edit Post
-Delete Post
-Search Posts from navbar
 
-Delete Post
+Add new posts
 
-Search Posts from navbar
+Edit existing posts
+
+Delete posts
+
+Search posts using the navbar
